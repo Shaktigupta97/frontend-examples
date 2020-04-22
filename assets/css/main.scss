@@ -2,27 +2,11 @@ html, body{
   height: 100%;
 }
 
-.image-container{
-  position: relative;
-  display: flex;
-
-  > div {
-    position: relative;
-    width: 50%;
-    height: 600px;
-    overflow: hidden;
-
-    > img {
-      position: absolute;
-      width: 100%;
-      height: auto;
-      top: 0;
-      margin-top: -10%;
-    }
-  }
+.body-content{
+  padding-top: 75px;
 }
 
-.floating-div-container{
-  height: auto;
-  overflow: auto;
-}
+@import 'components/header/main';
+@import 'components/side-nav/main';
+// @import 'components/body-content/main';
+@import 'others/temp';

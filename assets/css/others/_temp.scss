@@ -1,0 +1,61 @@
+.image-container{
+  position: relative;
+  display: flex;
+
+  > div {
+    position: relative;
+    width: 50%;
+    height: 600px;
+    overflow: hidden;
+
+    > img {
+      position: absolute;
+      width: 100%;
+      height: auto;
+      top: 0;
+      margin-top: -10%;
+    }
+  }
+}
+
+.floating-div-container{
+  height: auto;
+  overflow: auto;
+}
+
+.transition-test{
+  border-top: 1px solid #555;
+  border-bottom: 1px solid #555;
+  margin: 10px 0;
+  padding: 10px 0;
+
+  >span{
+    display: block;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+    transform: translateX(0);
+  }
+}
+
+@media (min-width: 992px) {
+  .transition-test{
+    >span{
+      transform: translateX(800px);
+    }
+    .ease-linear{
+      transition: all 2s linear;
+    }
+    .ease-in-out{
+      transition: all 2s ease-in-out;
+    }
+    .ease-in{
+      transition: all 2s ease-in;
+    }
+    .ease-out{
+      transition: all 2s ease-out;
+    }
+  }
+}
