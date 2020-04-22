@@ -1,0 +1,1 @@
+html,body{height:100%}.image-container{position:relative;display:-webkit-box;display:-ms-flexbox;display:flex}.image-container>div{position:relative;width:50%;height:600px;overflow:hidden}.image-container>div>img{position:absolute;width:100%;height:auto;top:0;margin-top:-10%}.floating-div-container{height:auto;overflow:auto}
