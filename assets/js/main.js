@@ -9,3 +9,8 @@ $('#open-side-nav').on('click', function(){
   //   side_nav_ele.addClass('open');
   // }
 });
+
+/** Load Particle JS Container */
+particlesJS.load('particles-js', '/assets/js/particles.json', function() {
+  console.log('callback - particles.js config loaded');
+});
