@@ -22,3 +22,27 @@ try{
   var scene = document.getElementById('ml-parallax');
   var parallaxInstance = new Parallax(scene);
 } catch (err) {}
+
+
+
+function functionSequence(){
+  $('#pre-loader').animate({
+    'top': -100 + '%',
+    'opacity': 0
+  }, 500, function(){
+    $(this).remove();
+  });
+}
+
+// =========================================================
+// On Load
+// =========================================================
+if (window.addEventListener) {
+  window.addEventListener('load', function () {
+    functionSequence();
+  });
+} else {
+  window.attachEvent('onload', function () {
+    functionSequence();
+  });
+}
