@@ -32,8 +32,16 @@ function functionSequence(){
   }, 500, function(){
     $(this).remove();
   });
+  
+  setTimeout(() => {
+    $('.book-loader-base').animate({
+      'top': -100 + '%',
+      'opacity': 0
+    }, 1500, function(){    //1500 is duration of going of loader
+      $(this).remove();
+    });
+  }, 2000);                //1500 is duration of going of loader
 }
-
 // =========================================================
 // On Load
 // =========================================================
