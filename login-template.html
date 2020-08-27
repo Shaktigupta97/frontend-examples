@@ -15,25 +15,35 @@
   <link rel="stylesheet" href="/assets/css/main.min.css">
 </head>
 <style>
+  html,
+  body {
+    height: 100%;
+  }
+
   a {
     font-size: 16px;
   }
-
-  .main-card-box {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    width: auto;
-    height: 500px;
+  
+  a:hover{
+    color: #0F8876;
   }
-  .left-card-box{
+
+  .content {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .main {
+    max-width: 1100px;
+  }
+
+  .left-card-box {
     padding-top: 25%
   }
+
   .right-card-btn {
-    font-size: 16px;
+    font-size: 1.25rem;
+    text-align: center;
     height: 50px;
     background-color: #e37b72;
   }
@@ -55,17 +65,70 @@
 
   .button-signin {
     background-color: #001A29;
+    height: 50px;
     color: white;
   }
-
-  .social {
-    margin-top: 20%;
+  .links{
+    display: flex;
+    justify-content:space-evenly;
   }
-  
+ 
+
 </style>
 
-<body style="background-image: url(/assets/media/watercolor-painting-tutorial-by-wordanova.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;">
-  <div class="container">
+<body>
+  <section class="h-100">
+    <table class="content w-100 h-100" style="background-image: url(/assets/media/watercolor-painting-tutorial-by-wordanova.jpg);">
+      <tr>
+        <td class="px-5 py-5">
+          <div class="row mx-auto no-gutters overflow-hidden main">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 left-card text-center">
+              <div class="card text-center p-3" style="background-image: url(/assets/media/left-card-bg2.jpg); background-repeat: no-repeat; background-size: cover;">
+                <div class="card-body left-card-box">
+                  <h2 class="card-title text-white">Get Started</h2>
+                  <a href="#" class="btn btn-lg right-card-btn w-100 my-3 text-white" role="button">SIGN IN WITH GOOGLE+ </a>
+                  <a href="#" class="btn  btn-lg right-card-btn w-100 my-3 text-white" role="button">SIGN IN WITH FACEBOOK</a>
+                </div>
+              </div>
+            </div>
+            <!-- right card -->
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 right-card">
+              <div class="card p-3" style="background-color: #e37b72;">
+                <div class="w-100 text-right d-flex-end my-3">
+                  <a href="#" class="btn btn-login btn-sm" role="button">Login</a>
+                  <a href="#" class="btn btn-register btn-sm mr-3" role="button">Register</a>
+                </div>
+                <div class="card-body">
+                  <h2 class="card-title">Log In</h2>
+                  <form>
+                    <div class="form-group text-dark">
+                      <label for="exampleInputEmail1">Username</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <button type="submit" class="btn btn-lg w-100 button-signin">SIGN IN</button>
+                  </form>
+                  <div class="card-body links">
+                    <a href="#" class="text-dark">Forgot Password?</a>
+                    <a href="#" class="text-dark">Not a Member Yet?</a>
+                  </div>
+                </div>
+              </div>
+            </div> 
+
+
+          </div>
+        </td>
+      </tr>
+
+    </table>
+
+  </section>
+  <!-- <div class="container">
     <div class="row ">
       <div class="card-deck main-card-box shadow-lg">
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 left-card text-center">
@@ -110,7 +173,7 @@
       </div>
 
     </div>
-  </div>
+  </div> -->
 
 
 
